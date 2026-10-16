@@ -1,0 +1,16 @@
+{
+  "dimensionsMetres": {
+    "length": 9.6,
+    "width": 2.7,
+    "wheelbase": 6
+  },
+  "bounds": {
+    "minX": -48,
+    "maxX": 48,
+    "minZ": -13.5,
+    "maxZ": 13.5,
+    "maxHeight": 37
+  },
+  "errors": [],
+  "source": "actual emitted mesh inspected against physical rectangular hull"
+}

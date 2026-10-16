@@ -4,63 +4,63 @@
     "target": "Vehicle collision · secure the scene · Rogers Centre",
     "bay": 11,
     "ok": true,
-    "seconds": 6.966666666666667,
+    "seconds": 7.116666666666666,
     "collisions": 0
   },
   {
     "call": 2,
-    "target": "Warehouse alarm · investigate smoke · Lake Shore Gardens",
-    "bay": 34,
+    "target": "Warehouse alarm · investigate smoke · Harbour Library",
+    "bay": 32,
     "ok": true,
-    "seconds": 55.583333333333336,
+    "seconds": 51.38333333333333,
     "collisions": 0
   },
   {
     "call": 3,
-    "target": "Roadside engine fire · crew requested · East Harbour Café",
-    "bay": 36,
+    "target": "Roadside engine fire · crew requested · Fort York Bakery",
+    "bay": 15,
     "ok": true,
-    "seconds": 77.28333333333333,
+    "seconds": 86.85,
     "collisions": 0
   },
   {
     "call": 4,
-    "target": "Fallen tree · blocked roadway · Lake Shore Gardens",
-    "bay": 34,
+    "target": "Fallen tree · blocked roadway · East Harbour Café",
+    "bay": 36,
     "ok": true,
-    "seconds": 49.983333333333334,
+    "seconds": 36.15,
     "collisions": 0
   },
   {
     "call": 5,
-    "target": "Apartment alarm · assist evacuation · Roundhouse Café",
-    "bay": 22,
+    "target": "Apartment alarm · assist evacuation · Richmond Noodle House",
+    "bay": 5,
     "ok": true,
-    "seconds": 75.81666666666666,
+    "seconds": 69.33333333333333,
     "collisions": 0
   },
   {
     "call": 6,
-    "target": "Fuel spill · make the area safe · Harbour Library",
-    "bay": 32,
+    "target": "Fuel spill · make the area safe · Yonge Street Market",
+    "bay": 29,
     "ok": true,
-    "seconds": 44.4,
+    "seconds": 52.36666666666667,
     "collisions": 0
   },
   {
     "call": 7,
-    "target": "Vehicle collision · secure the scene · Fort York Bakery",
-    "bay": 15,
+    "target": "Vehicle collision · secure the scene · Entertainment District Cinema",
+    "bay": 7,
     "ok": true,
-    "seconds": 86.08333333333333,
+    "seconds": 69.75,
     "collisions": 0
   },
   {
     "call": 8,
-    "target": "Warehouse alarm · investigate smoke · Music Garden",
-    "bay": 20,
+    "target": "Warehouse alarm · investigate smoke · CN Tower",
+    "bay": 12,
     "ok": true,
-    "seconds": 59.96666666666667,
+    "seconds": 52.833333333333336,
     "collisions": 0
   }
 ]

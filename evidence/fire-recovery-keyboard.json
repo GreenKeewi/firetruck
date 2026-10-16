@@ -1,8 +1,8 @@
 {
   "errors": [],
   "collision": 1,
-  "firstRecoveryMetres": 4.913069671472124,
-  "secondRecoveryMetres": 4.918476491634306,
+  "firstRecoveryMetres": 3.989457620750636,
+  "secondRecoveryMetres": 4.895651749667218,
   "clockContinues": true,
   "note": "Crash fixture inserted ahead; driving, impact and repeated recovery use real keyboard input."
 }
