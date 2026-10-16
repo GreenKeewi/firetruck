@@ -1,0 +1,69 @@
+{
+  "restoration": [
+    {
+      "a": 0,
+      "held": true,
+      "signals": {
+        "horizontal": "red",
+        "vertical": "red",
+        "phase": "restore",
+        "priorityAxis": "horizontal"
+      },
+      "released": true,
+      "elevatedExcluded": true
+    },
+    {
+      "a": 1.5707963267948966,
+      "held": true,
+      "signals": {
+        "horizontal": "red",
+        "vertical": "red",
+        "phase": "restore",
+        "priorityAxis": "vertical"
+      },
+      "released": true,
+      "elevatedExcluded": true
+    },
+    {
+      "a": 3.141592653589793,
+      "held": true,
+      "signals": {
+        "horizontal": "red",
+        "vertical": "red",
+        "phase": "restore",
+        "priorityAxis": "horizontal"
+      },
+      "released": true,
+      "elevatedExcluded": true
+    },
+    {
+      "a": -1.5707963267948966,
+      "held": true,
+      "signals": {
+        "horizontal": "red",
+        "vertical": "red",
+        "phase": "restore",
+        "priorityAxis": "vertical"
+      },
+      "released": true,
+      "elevatedExcluded": true
+    }
+  ],
+  "rejoin": {
+    "pulled": {
+      "left": 201.64166666666983,
+      "offset": 64
+    },
+    "crossed": true,
+    "reversed": true,
+    "reverseMetres": 2.8903333333336434,
+    "maxStep": 1.161335848484896,
+    "state": null,
+    "offset": 20,
+    "rejoined": 1
+  },
+  "blockedRejoin": {
+    "heldDistanceMetres": 0,
+    "unblockedCrossed": true
+  }
+}

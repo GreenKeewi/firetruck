@@ -1,0 +1,52 @@
+{
+  "restoration": [
+    {
+      "a": 0,
+      "held": false,
+      "signals": {
+        "horizontal": "green",
+        "vertical": "red"
+      },
+      "released": true
+    },
+    {
+      "a": 1.5707963267948966,
+      "held": false,
+      "signals": {
+        "horizontal": "green",
+        "vertical": "red"
+      },
+      "released": true
+    },
+    {
+      "a": 3.141592653589793,
+      "held": false,
+      "signals": {
+        "horizontal": "green",
+        "vertical": "red"
+      },
+      "released": true
+    },
+    {
+      "a": -1.5707963267948966,
+      "held": false,
+      "signals": {
+        "horizontal": "green",
+        "vertical": "red"
+      },
+      "released": true
+    }
+  ],
+  "rejoin": {
+    "pulled": {
+      "left": 201.64166666666983,
+      "offset": 64
+    },
+    "crossed": false,
+    "reversed": false,
+    "maxStep": 0.46218082079546496,
+    "state": "rejoin",
+    "offset": 49.9999999999998,
+    "rejoined": 0
+  }
+}

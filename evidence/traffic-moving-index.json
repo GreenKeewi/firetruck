@@ -1,0 +1,90 @@
+[
+  {
+    "seed": 42,
+    "scenario": "city",
+    "seconds": 25,
+    "maximumTrajectoryError": 0,
+    "playerMovedMetres": 19.605682694041352,
+    "playerHeadingChangeRadians": 1.4879688954405552,
+    "npcTurnFrames": 2969,
+    "yieldFrames": 0,
+    "rejoined": 0
+  },
+  {
+    "seed": 42,
+    "scenario": "highway",
+    "seconds": 25,
+    "maximumTrajectoryError": 0,
+    "playerMovedMetres": 555.4427241747478,
+    "playerHeadingChangeRadians": 0.06532428298201567,
+    "npcTurnFrames": 2969,
+    "yieldFrames": 0,
+    "rejoined": 0
+  },
+  {
+    "seed": 42,
+    "scenario": "yield",
+    "seconds": 25,
+    "maximumTrajectoryError": 0,
+    "playerMovedMetres": 26.19995514486909,
+    "playerHeadingChangeRadians": 0,
+    "npcTurnFrames": 1749,
+    "yieldFrames": 2833,
+    "rejoined": 0
+  },
+  {
+    "seed": 42,
+    "scenario": "rejoin",
+    "seconds": 25,
+    "maximumTrajectoryError": 0,
+    "playerMovedMetres": 0,
+    "playerHeadingChangeRadians": 0,
+    "npcTurnFrames": 658,
+    "yieldFrames": 1681,
+    "rejoined": 1
+  },
+  {
+    "seed": 8427,
+    "scenario": "city",
+    "seconds": 25,
+    "maximumTrajectoryError": 0,
+    "playerMovedMetres": 19.605682694041352,
+    "playerHeadingChangeRadians": 1.4879688954405552,
+    "npcTurnFrames": 2965,
+    "yieldFrames": 0,
+    "rejoined": 0
+  },
+  {
+    "seed": 8427,
+    "scenario": "highway",
+    "seconds": 25,
+    "maximumTrajectoryError": 0,
+    "playerMovedMetres": 555.4427241747478,
+    "playerHeadingChangeRadians": 0.06532428298201567,
+    "npcTurnFrames": 2965,
+    "yieldFrames": 0,
+    "rejoined": 0
+  },
+  {
+    "seed": 8427,
+    "scenario": "yield",
+    "seconds": 25,
+    "maximumTrajectoryError": 0,
+    "playerMovedMetres": 29.40449208266879,
+    "playerHeadingChangeRadians": 0,
+    "npcTurnFrames": 1741,
+    "yieldFrames": 2833,
+    "rejoined": 0
+  },
+  {
+    "seed": 8427,
+    "scenario": "rejoin",
+    "seconds": 25,
+    "maximumTrajectoryError": 0,
+    "playerMovedMetres": 0,
+    "playerHeadingChangeRadians": 0,
+    "npcTurnFrames": 658,
+    "yieldFrames": 1681,
+    "rejoined": 1
+  }
+]

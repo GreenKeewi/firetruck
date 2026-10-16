@@ -1,0 +1,36 @@
+{
+  "flags": [
+    {
+      "ui": true,
+      "engine": true
+    },
+    {
+      "ui": true,
+      "engine": true
+    },
+    {
+      "ui": false,
+      "engine": false
+    },
+    {
+      "ui": false,
+      "engine": false
+    },
+    {
+      "ui": true,
+      "engine": true
+    }
+  ],
+  "scheduling": [
+    {
+      "low": true,
+      "calls": 3
+    },
+    {
+      "low": false,
+      "calls": 6
+    }
+  ],
+  "cornerPromotionBlocked": true,
+  "errors": []
+}
