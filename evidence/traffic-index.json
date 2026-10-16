@@ -1,0 +1,62 @@
+[
+  {
+    "seed": 42,
+    "traffic": "normal",
+    "seconds": 10,
+    "maximumTrajectoryError": 0,
+    "referenceMs": 1541.2409229999957,
+    "indexedMs": 498.9675589999986,
+    "cpuReductionPercent": 67.62559626117583,
+    "comparisonWallMs": 2459.94403
+  },
+  {
+    "seed": 42,
+    "traffic": "rush",
+    "seconds": 10,
+    "maximumTrajectoryError": 0,
+    "referenceMs": 3049.229710999977,
+    "indexedMs": 940.3323630000168,
+    "cpuReductionPercent": 69.16164237781743,
+    "comparisonWallMs": 4731.5520910000005
+  },
+  {
+    "seed": 42,
+    "traffic": "gridlock",
+    "seconds": 10,
+    "maximumTrajectoryError": 0,
+    "referenceMs": 4551.087812999977,
+    "indexedMs": 1280.3016650000318,
+    "cpuReductionPercent": 71.86822760609215,
+    "comparisonWallMs": 6840.803868999999
+  },
+  {
+    "seed": 8427,
+    "traffic": "normal",
+    "seconds": 10,
+    "maximumTrajectoryError": 0,
+    "referenceMs": 1238.4257829999988,
+    "indexedMs": 443.4306669999769,
+    "cpuReductionPercent": 64.19400556036572,
+    "comparisonWallMs": 2059.599309000001
+  },
+  {
+    "seed": 8427,
+    "traffic": "rush",
+    "seconds": 10,
+    "maximumTrajectoryError": 0,
+    "referenceMs": 2339.509433999967,
+    "indexedMs": 724.3534850000433,
+    "cpuReductionPercent": 69.03823192704195,
+    "comparisonWallMs": 3668.0981250000004
+  },
+  {
+    "seed": 8427,
+    "traffic": "gridlock",
+    "seconds": 10,
+    "maximumTrajectoryError": 0,
+    "referenceMs": 3877.9406319999543,
+    "indexedMs": 1069.5347930000935,
+    "cpuReductionPercent": 72.42003180310405,
+    "comparisonWallMs": 5852.182121000002
+  }
+]

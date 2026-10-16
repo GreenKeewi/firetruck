@@ -1,0 +1,223 @@
+{
+  "density": [
+    {
+      "preset": "normal",
+      "cars": 48,
+      "workzones": 0,
+      "meanKmh": 25.76897434863496,
+      "meanStopped": 14.15,
+      "overlapBefore": 0,
+      "overlapAfter": 0
+    },
+    {
+      "preset": "rush",
+      "cars": 96,
+      "workzones": 1,
+      "meanKmh": 23.112485579721397,
+      "meanStopped": 25.3,
+      "overlapBefore": 0,
+      "overlapAfter": 0
+    },
+    {
+      "preset": "gridlock",
+      "cars": 144,
+      "workzones": 2,
+      "meanKmh": 17.953089559229124,
+      "meanStopped": 40.75,
+      "overlapBefore": 0,
+      "overlapAfter": 0
+    }
+  ],
+  "yield": {
+    "first": 1.5166666666666637,
+    "reacted": [
+      {
+        "id": 1,
+        "delay": 1.4999999999999971
+      },
+      {
+        "id": 2,
+        "delay": 1.7499999999999962
+      }
+    ],
+    "stats": {
+      "yieldStarted": 2,
+      "rejoined": 2,
+      "blocked": 194
+    }
+  },
+  "signals": [
+    {
+      "a": 0,
+      "green": true,
+      "allRedSeconds": 0.9083333333333333,
+      "phases": [
+        {
+          "horizontal": "amber",
+          "vertical": "red",
+          "phase": "yellow",
+          "priorityAxis": "horizontal"
+        },
+        {
+          "horizontal": "amber",
+          "vertical": "red",
+          "phase": "yellow",
+          "priorityAxis": "horizontal"
+        },
+        {
+          "horizontal": "amber",
+          "vertical": "red",
+          "phase": "clear",
+          "priorityAxis": "horizontal"
+        },
+        {
+          "horizontal": "green",
+          "vertical": "red",
+          "phase": "serve",
+          "priorityAxis": "horizontal"
+        },
+        {
+          "horizontal": "green",
+          "vertical": "red",
+          "phase": "serve",
+          "priorityAxis": "horizontal"
+        },
+        {
+          "horizontal": "green",
+          "vertical": "red",
+          "phase": "serve",
+          "priorityAxis": "horizontal"
+        }
+      ]
+    },
+    {
+      "a": 1.5707963267948966,
+      "green": true,
+      "allRedSeconds": 0.9083333333333333,
+      "phases": [
+        {
+          "horizontal": "amber",
+          "vertical": "red",
+          "phase": "yellow",
+          "priorityAxis": "vertical"
+        },
+        {
+          "horizontal": "amber",
+          "vertical": "red",
+          "phase": "yellow",
+          "priorityAxis": "vertical"
+        },
+        {
+          "horizontal": "amber",
+          "vertical": "red",
+          "phase": "clear",
+          "priorityAxis": "vertical"
+        },
+        {
+          "horizontal": "red",
+          "vertical": "green",
+          "phase": "serve",
+          "priorityAxis": "vertical"
+        },
+        {
+          "horizontal": "red",
+          "vertical": "green",
+          "phase": "serve",
+          "priorityAxis": "vertical"
+        },
+        {
+          "horizontal": "red",
+          "vertical": "green",
+          "phase": "serve",
+          "priorityAxis": "vertical"
+        }
+      ]
+    },
+    {
+      "a": 3.141592653589793,
+      "green": true,
+      "allRedSeconds": 0.9083333333333333,
+      "phases": [
+        {
+          "horizontal": "amber",
+          "vertical": "red",
+          "phase": "yellow",
+          "priorityAxis": "horizontal"
+        },
+        {
+          "horizontal": "amber",
+          "vertical": "red",
+          "phase": "yellow",
+          "priorityAxis": "horizontal"
+        },
+        {
+          "horizontal": "amber",
+          "vertical": "red",
+          "phase": "clear",
+          "priorityAxis": "horizontal"
+        },
+        {
+          "horizontal": "green",
+          "vertical": "red",
+          "phase": "serve",
+          "priorityAxis": "horizontal"
+        },
+        {
+          "horizontal": "green",
+          "vertical": "red",
+          "phase": "serve",
+          "priorityAxis": "horizontal"
+        },
+        {
+          "horizontal": "green",
+          "vertical": "red",
+          "phase": "serve",
+          "priorityAxis": "horizontal"
+        }
+      ]
+    },
+    {
+      "a": -1.5707963267948966,
+      "green": true,
+      "allRedSeconds": 0.9083333333333333,
+      "phases": [
+        {
+          "horizontal": "amber",
+          "vertical": "red",
+          "phase": "yellow",
+          "priorityAxis": "vertical"
+        },
+        {
+          "horizontal": "amber",
+          "vertical": "red",
+          "phase": "yellow",
+          "priorityAxis": "vertical"
+        },
+        {
+          "horizontal": "amber",
+          "vertical": "red",
+          "phase": "clear",
+          "priorityAxis": "vertical"
+        },
+        {
+          "horizontal": "red",
+          "vertical": "green",
+          "phase": "serve",
+          "priorityAxis": "vertical"
+        },
+        {
+          "horizontal": "red",
+          "vertical": "green",
+          "phase": "serve",
+          "priorityAxis": "vertical"
+        },
+        {
+          "horizontal": "red",
+          "vertical": "green",
+          "phase": "serve",
+          "priorityAxis": "vertical"
+        }
+      ]
+    }
+  ]
+}

@@ -17,6 +17,7 @@ class TaxiAudio {
     const a=this.context=new this.AudioContext();
     this.master=a.createGain();this.master.gain.value=0;this.master.connect(a.destination);
     this.engine=a.createGain();this.engine.gain.value=.16;this.engine.connect(this.master);
+    this.sirenOsc=a.createOscillator();this.sirenGain=a.createGain();this.sirenOsc.type='sine';this.sirenOsc.frequency.value=650;this.sirenGain.gain.value=0;this.sirenOsc.connect(this.sirenGain);this.sirenGain.connect(this.master);this.sirenOsc.start();
     this.filter=a.createBiquadFilter();this.filter.type='lowpass';this.filter.frequency.value=310;this.filter.Q.value=.6;this.filter.connect(this.engine);
     this.voices=[['sawtooth',1,.38],['triangle',.5,.32],['triangle',2,.17],['sine',3,.07]].map(([type,ratio,level])=>{
      const oscillator=a.createOscillator(),gain=a.createGain();oscillator.type=type;oscillator.frequency.value=43*ratio;gain.gain.value=level;
@@ -71,6 +72,7 @@ class TaxiAudio {
    this.tyres.gain.gain.setTargetAtTime(clamp(v/22,0,1)*scrub,t,.10);
    this.tyres.filter.frequency.setTargetAtTime(550+slip*1450+lateral*48,t,.12);
   }
+  if(this.sirenOsc){this.sirenOsc.frequency.setTargetAtTime(650+Math.sin(t*Math.PI*1.1)*230,t,.025);this.sirenGain.gain.setTargetAtTime(options.siren&&playing?.075:0,t,.08);}
   this.lastSpeed=v;this.lastTime=t;this._volume();
   const active=this.enabled&&this.playing&&!(this.document&&this.document.hidden);
   const turn=turnAhead&&typeof turnAhead==='object'?turnAhead:null;
@@ -98,7 +100,7 @@ class TaxiAudio {
  }
  destroy(){
   if(this.document&&this.document.removeEventListener)this.document.removeEventListener('visibilitychange',this._hidden);
-  if(this.context){this.playing=false;this._volume();this.voices.forEach(v=>v.oscillator.stop());this.noiseSources.forEach(source=>source.stop());this.noiseSources=[];const pending=this.context.close();if(pending&&pending.catch)pending.catch(()=>{});this.context=null;}
+  if(this.context){this.playing=false;this._volume();this.voices.forEach(v=>v.oscillator.stop());this.sirenOsc?.stop();this.noiseSources.forEach(source=>source.stop());this.noiseSources=[];const pending=this.context.close();if(pending&&pending.catch)pending.catch(()=>{});this.context=null;}
  }
 }
 root.TaxiAudio=TaxiAudio;if(typeof module!=='undefined'&&module.exports)module.exports=TaxiAudio;

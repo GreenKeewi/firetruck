@@ -1,0 +1,16 @@
+[
+  {
+    "axis": "horizontal",
+    "queuedCarCrossed": true,
+    "stoppedRequestReleased": true,
+    "nextIntersectionIndependent": true,
+    "turnAwayReleased": true
+  },
+  {
+    "axis": "vertical",
+    "queuedCarCrossed": true,
+    "stoppedRequestReleased": true,
+    "nextIntersectionIndependent": true,
+    "turnAwayReleased": true
+  }
+]

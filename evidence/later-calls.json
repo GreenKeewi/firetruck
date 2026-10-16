@@ -1,0 +1,66 @@
+[
+  {
+    "call": 1,
+    "target": "Vehicle collision · secure the scene · Rogers Centre",
+    "bay": 11,
+    "ok": true,
+    "seconds": 6.966666666666667,
+    "collisions": 0
+  },
+  {
+    "call": 2,
+    "target": "Warehouse alarm · investigate smoke · Lake Shore Gardens",
+    "bay": 34,
+    "ok": true,
+    "seconds": 55.583333333333336,
+    "collisions": 0
+  },
+  {
+    "call": 3,
+    "target": "Roadside engine fire · crew requested · East Harbour Café",
+    "bay": 36,
+    "ok": true,
+    "seconds": 77.28333333333333,
+    "collisions": 0
+  },
+  {
+    "call": 4,
+    "target": "Fallen tree · blocked roadway · Lake Shore Gardens",
+    "bay": 34,
+    "ok": true,
+    "seconds": 49.983333333333334,
+    "collisions": 0
+  },
+  {
+    "call": 5,
+    "target": "Apartment alarm · assist evacuation · Roundhouse Café",
+    "bay": 22,
+    "ok": true,
+    "seconds": 75.81666666666666,
+    "collisions": 0
+  },
+  {
+    "call": 6,
+    "target": "Fuel spill · make the area safe · Harbour Library",
+    "bay": 32,
+    "ok": true,
+    "seconds": 44.4,
+    "collisions": 0
+  },
+  {
+    "call": 7,
+    "target": "Vehicle collision · secure the scene · Fort York Bakery",
+    "bay": 15,
+    "ok": true,
+    "seconds": 86.08333333333333,
+    "collisions": 0
+  },
+  {
+    "call": 8,
+    "target": "Warehouse alarm · investigate smoke · Music Garden",
+    "bay": 20,
+    "ok": true,
+    "seconds": 59.96666666666667,
+    "collisions": 0
+  }
+]
