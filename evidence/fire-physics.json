@@ -1,12 +1,12 @@
 {
   "recovery": {
-    "firstMetres": 4.728252510021389,
-    "repeatedMetres": 4.894144774213453,
+    "firstMetres": 4.705618103739255,
+    "repeatedMetres": 4.987894044297638,
     "timerPreserved": true
   },
   "blockedRecovery": "refused occupied history",
   "impact": {
-    "reboundKmh": -2.914300781953872,
+    "reboundKmh": -2.6928092109401733,
     "collisions": 1
   },
   "speedCap": {

@@ -872,8 +872,8 @@
   "save": "remaining transfer survives snapshot/restore",
   "timing": {
     "samples": 172,
-    "medianMs": 2.29715699999997,
-    "p95Ms": 3.5381450000000427,
-    "maxMs": 9.71338000000003
+    "medianMs": 2.424868999999944,
+    "p95Ms": 3.501958000000002,
+    "maxMs": 5.259958000000012
   }
 }

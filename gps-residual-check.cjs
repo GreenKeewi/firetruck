@@ -1,0 +1,2 @@
+const assert=require('assert/strict'),E=require('./engine3d'),H=require('./highway'),m=new E.Game().map;
+for(const kind of['taxi','bus'])for(const dir of[1,-1]){const station=dir>0?5300:4400,c={...H.at(m,station,dir*98),...E.VEHICLES[kind],kind},p=H.path(m,station,dir>0?8000:3500,dir,dir*98,{vehicle:c});assert(p.transfer?.recovery);assert(p.reachesCollectors);assert(H.sweptClear(m,p,c));const near=p.find(q=>(q.station-(dir>0?5440:4260))*dir>=0);assert(Math.abs(near.lateral)>115);console.log({kind,dir,transfer:p.transfer});}

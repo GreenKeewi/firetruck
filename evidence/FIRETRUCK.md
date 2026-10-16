@@ -15,3 +15,15 @@ Validation:
 Limits: only the opening call has complete keyboard route coverage. Later calls and busy intersections have not received exhaustive driving coverage. Maximum-speed check uses engine simulation with highway heading guidance; it is not a complete keyboard highway journey. Cloud Chromium is not physical weak-computer validation. Live Pages reachability may be blocked by the cloud proxy; publication status is checked independently through GitHub.
 
 Approved expansions (sirens/yielding, radio, smoke, alleys, vehicle handling choices, improved mirrors, scores, hose/rescue tasks and bot convoys) are deferred until after this base checkpoint. No multiplayer or weather added.
+
+## Handling and dispatch update
+
+Acceleration reduced from 42 to 36 world-units/s² (14% gentler); braking increased from 66 to 92. Space applies a 1.15 braking multiplier. At 160 km/h the measured full-brake stop takes 4.21 s / 93.35 m; S takes 4.83 s / 107.35 m. At 50 km/h full brake takes 1.32 s / 9.12 m. No reverse is allowed before zero; S then requires 0.35 s at standstill before reversing. Maximum reverse is 12 km/h.
+
+The 4.6 m wheelbase remains; minimum steering-radius parameter increases from 3.2 m to 5.5 m. Steering input builds at 1.25/s rather than 1.8/s, returns at 2.2/s rather than 3.6/s, and yaw response is damped over 0.18 s rather than 0.10 s. Grip acceleration is bounded at 5.5 m/s². High-speed response checks through 160 km/h stay within that bound. These are accessible arcade physics, not a vehicle safety simulation.
+
+Parking now requires every transformed body corner inside the 12.4 × 4.2 m bay. The truck now uses the same rectangular 78 × 25 envelope as its mesh, including corner contact and safe recovery. Positive/negative yaw 0.19 with lateral offsets ±0.7 m is rejected; fully contained parking completes normally. Emergency GPS approaches stay on the bay lane rather than drawing the inherited taxi curb maneuver.
+
+Completed calls now start a varied 15–30 second standby. Response allowance remains untouched; pause freezes standby. Fresh Enter accepts early, while an already held Enter cannot skip it. Repeated dispatch tests cover eight cycles.
+
+A lost express/collector transfer at station 5300 / lateral 98 now uses a swept-clear short move to the inner collector inside the same opening, followed by a gentler move to the outer collector. Both directions and both truck-sized hulls pass conservative swept clearance; existing GPS15 tests still pass.
