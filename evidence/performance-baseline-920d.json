@@ -1,0 +1,38 @@
+{
+  "measuredAt": "2026-10-16T18:58:19.265Z",
+  "sourceBase": "920db4956c4751a301a2c8e808e771cce65851c4",
+  "environment": "Cloud Chromium Canvas fallback, 1024x768, keyboard-selected Gridlock, low power, 9-second warm-up after driving/braking; no CPU throttling; no physical-device claim",
+  "protocol": "performance-check.cjs",
+  "runtimeHashes": {
+    "engine3d.js": "0b7ead410291af6776d69ce73d82be4149685b5f4cd24914eb2a44de24b481ea",
+    "traffic-control.js": "4197e702631e616ac5ef217ba9d5184bb3f118c9ed9395ea5de635c402823354",
+    "game.js": "c285962740befa569327c6410e5e76a30fcca3e7df578c5e10d0ffacc0e40dae",
+    "renderer.js": "fb9ff1f69b0b1a2eda145f5fb77e80631e1c62081ac4c576a2340de0a4306cf7",
+    "software.js": "2f545b7351e37ccc9e458f7f87a957551925a91feac9a2c6f157298ceb54cb16"
+  },
+  "software": true,
+  "lowPower": true,
+  "engineLowPower": true,
+  "cars": 144,
+  "fps": 28,
+  "lighting": null,
+  "fullCallback": {
+    "samples": 240,
+    "meanMs": 18.085833333343423,
+    "p95Ms": 28,
+    "maxMs": 34.19999999925494
+  },
+  "renderOnly": {
+    "samples": 240,
+    "meanMs": 19.217499999985254,
+    "p95Ms": 24.200000000186265,
+    "maxMs": 31.299999999813735
+  },
+  "drawGap": {
+    "samples": 240,
+    "meanMs": 36.66291666666511,
+    "p95Ms": 48.40000000037253,
+    "maxMs": 61.59999999962747
+  },
+  "errors": []
+}

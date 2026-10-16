@@ -1,0 +1,74 @@
+[
+  {
+    "backend": "webgl",
+    "phases": [
+      {
+        "phase": "DAY",
+        "time": 960,
+        "active": false,
+        "backendLow": false
+      },
+      {
+        "phase": "DUSK",
+        "time": 1080,
+        "active": true,
+        "backendLow": false
+      },
+      {
+        "phase": "NIGHT",
+        "time": 1320,
+        "active": true,
+        "backendLow": false
+      }
+    ],
+    "pixelBrightness": {
+      "on": {
+        "road": 106.94273295898057,
+        "vehicle": 87.04999999999963
+      },
+      "off": {
+        "road": 47.04411860351143,
+        "vehicle": 36.877999999999886
+      }
+    },
+    "nightTimeAndLampModePersisted": true,
+    "pauseFreezesClock": true,
+    "errors": []
+  },
+  {
+    "backend": "canvas",
+    "phases": [
+      {
+        "phase": "DAY",
+        "time": 960,
+        "active": false,
+        "backendLow": true
+      },
+      {
+        "phase": "DUSK",
+        "time": 1080,
+        "active": true,
+        "backendLow": true
+      },
+      {
+        "phase": "NIGHT",
+        "time": 1320,
+        "active": true,
+        "backendLow": true
+      }
+    ],
+    "pixelBrightness": {
+      "on": {
+        "road": 71.83753407407083,
+        "vehicle": 98.56272767857116
+      },
+      "off": {
+        "road": 46.498826271603924,
+        "vehicle": 41.55199910714278
+      }
+    },
+    "nightTimeAndLampModePersisted": true,
+    "pauseFreezesClock": true,
+    "errors": []
+  }
+]

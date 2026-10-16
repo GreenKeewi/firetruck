@@ -65,7 +65,7 @@
       this.calls = 0; this.software = true;
       this.far = 1600; this.mirrorFar = 850;
       this.gl = { deleteBuffer(b) { if (b) { b.data = null; b.count = 0; b.triangles = 0; b.capacity = 0; } } };
-      this._palette = []; this._colors = new Map();
+      this._palette = []; this._colors = new Map();this._baseColors=[];this._nightPalette=[];this._lightingKey=null;
       this._queue = new Float32Array(0); this._ground = new Uint32Array(0); this._objects = new Uint32Array(0);
       this._clipA = new Float64Array(48); this._clipB = new Float64Array(48);
       this._depthOrder = (a, b) => this._queue[b * DRAW] - this._queue[a * DRAW] || a - b;
@@ -84,8 +84,10 @@
         const q = f / FOG_STEPS * .8;
         colors.push('rgb(' + Math.round(rr + (SKY[0] - rr) * q) + ',' + Math.round(gg + (SKY[1] - gg) * q) + ',' + Math.round(bb + (SKY[2] - bb) * q) + ')');
       }
-      this._palette.push(colors); return id;
+      this._palette.push(colors);this._baseColors.push([rr,gg,bb]);return id;
     }
+
+    _litColor(id,bucket,fog,lit){if(this._lightingKey!==lit.key){this._lightingKey=lit.key;this._nightPalette=[];}let shades=this._nightPalette[id];if(!shades)shades=this._nightPalette[id]=[];if(!shades[bucket]){const level=lit.ambient+(1-lit.ambient)*bucket/4,base=this._baseColors[id].map(v=>v*level),sky=lit.sky.map(v=>v*255),colors=[];for(let f=0;f<=FOG_STEPS;f++){const q=f/FOG_STEPS*.8;colors.push('rgb('+base.map((v,i)=>Math.round(v+(sky[i]-v)*q)).join(',')+')');}shades[bucket]=colors;}return shades[bucket][fog];}
 
     buffer(mesh, dynamic = false) {
       const b = { buffer: null, count: 0, triangles: 0, dynamic, capacity: 0, data: null };
@@ -161,7 +163,7 @@
       const ctx = this.ctx;
       ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0);
       ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip();
-      ctx.fillStyle = 'rgb(176,209,219)'; ctx.fillRect(x, y, w, h);
+      const lighting=this.lighting||root.FireLighting.state(960,{},'off');ctx.fillStyle=root.FireLighting.css(lighting.sky); ctx.fillRect(x, y, w, h);
       let total = 0; for (const b of buffers) total += b.triangles || 0;
       this._reserve(total);
       const q = this._queue, ground = this._ground, objects = this._objects;
@@ -216,7 +218,7 @@
             n = out / 3; const swap = input; input = output; output = swap;
           }
           if (n < 3) continue;
-          const o = count * DRAW; q[o+27]=b.roadSurface&&b.roadSurface[t]?1:0;
+          const o = count * DRAW;q[o+26]=lighting.daylight>=.999?0:Math.round((root.FireLighting.intensity(lighting,data[d+9],data[d+10],data[d+11])-lighting.ambient)/(1-lighting.ambient)*4); q[o+27]=b.roadSurface&&b.roadSurface[t]?1:0;
           // Ignore camera pitch for face ordering so glazing stays on its parent facade.
           q[o] = horizontal; q[o + 1] = data[d + 10]; q[o + 2] = data[d + 13]; q[o + 3] = n;
           let area = 0, lastX = 0, lastY = 0, firstX = 0, firstY = 0;
@@ -241,7 +243,7 @@
       let style = '';
       const draw = list => {
         for (let i = 0; i < list.length; i++) {
-          const o = list[i] * DRAW, n = q[o + 3], color = this._palette[q[o + 2]][q[o + 4]];
+          const o = list[i] * DRAW, n = q[o + 3], color = lighting.daylight>=.999?this._palette[q[o + 2]][q[o + 4]]:this._litColor(q[o+2],q[o+26],q[o+4],lighting);
           if (color !== style) { ctx.fillStyle = color; style = color; }
           ctx.beginPath(); ctx.moveTo(q[o + 5], q[o + 6]);
           for (let v = 1; v < n; v++) ctx.lineTo(q[o + 5 + v * 2], q[o + 6 + v * 2]);

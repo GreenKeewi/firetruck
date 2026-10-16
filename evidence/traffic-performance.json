@@ -1,1 +1,61 @@
-{"environment":"Cloud Chromium Canvas fallback, 1024x768, low power, 144 traffic vehicles; no physical-device claim","fps":26,"fullCallback":{"samples":240,"meanMs":24.28625,"p95Ms":35.1,"maxMs":46.2},"renderOnly":{"samples":240,"meanMs":18.90625,"p95Ms":25.6,"maxMs":38.2},"drawGap":{"samples":240,"meanMs":39.01042,"p95Ms":53.2,"maxMs":67.7},"note":"Full callback includes simulation. Draw-gap p95 exposes stutter that the inherited render-only frameMs omitted. Dense traffic retained."}
+{
+  "measuredAt": "2026-10-16T19:06:55.428Z",
+  "sourceBase": "920db4956c4751a301a2c8e808e771cce65851c4",
+  "environment": "Cloud Chromium Canvas fallback, 1024x768, keyboard-selected Gridlock, low power, 9-second warm-up after driving/braking; no CPU throttling; no physical-device claim",
+  "protocol": "performance-check.cjs",
+  "runtimeHashes": {
+    "engine3d.js": "0b7ead410291af6776d69ce73d82be4149685b5f4cd24914eb2a44de24b481ea",
+    "traffic-control.js": "4197e702631e616ac5ef217ba9d5184bb3f118c9ed9395ea5de635c402823354",
+    "game.js": "ab21ec5489b77f124777ec608ede7f346b830cf196bfaf327894ccddcba628b3",
+    "renderer.js": "e7d93dd051eb76788cb90dec6c5b20b31978aa9c99c9fc9047cf8615c7004d36",
+    "software.js": "1544d0e300d03602dd54b3ec10e324792ec4f0d812412147bfecf5036d866670",
+    "lighting.js": "3b58f085a2529267e7595665f324b8bb020a2a30f6307b1e955f703fd8dfda62"
+  },
+  "software": true,
+  "lowPower": true,
+  "engineLowPower": true,
+  "cars": 144,
+  "fps": 23,
+  "lighting": {
+    "clockMinutes": 965.1466666666665,
+    "daylight": 1,
+    "ambient": 1,
+    "sky": [
+      0.69,
+      0.82,
+      0.86
+    ],
+    "active": false,
+    "mode": "auto",
+    "phase": "DAY",
+    "lamp": [
+      908.7732578905891,
+      9,
+      1185
+    ],
+    "direction": [
+      1,
+      0
+    ],
+    "key": "1"
+  },
+  "fullCallback": {
+    "samples": 240,
+    "meanMs": 21.468333333307722,
+    "p95Ms": 33.700000000186265,
+    "maxMs": 61.69999999925494
+  },
+  "renderOnly": {
+    "samples": 240,
+    "meanMs": 20.73833333334575,
+    "p95Ms": 29.40000000037253,
+    "maxMs": 51.19999999925494
+  },
+  "drawGap": {
+    "samples": 240,
+    "meanMs": 39.31875,
+    "p95Ms": 54.299999999813735,
+    "maxMs": 73.70000000018626
+  },
+  "errors": []
+}

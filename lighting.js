@@ -1,0 +1,8 @@
+/* Lightweight world-space time-of-day and truck headlight lighting; no shadow maps. */
+(function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.FireLighting=api;})(typeof globalThis!=='undefined'?globalThis:this,function(){'use strict';
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+function smooth(a,b,x){const t=clamp((x-a)/(b-a),0,1);return t*t*(3-2*t);}
+function state(minutes,car={},mode='auto'){const clock=((minutes%1440)+1440)%1440,raw=clamp(Math.min((clock-300)/120,(1140-clock)/120),0,1),daylight=Math.round(raw*32)/32,ambient=.42+.58*daylight,dusk=4*daylight*(1-daylight),night=[.085,.13,.205],day=[.69,.82,.86],sky=night.map((n,i)=>clamp(n+(day[i]-n)*daylight+dusk*[.08,-.015,-.065][i],0,1)),a=car.a||0,front=(car.length||96)/2+1,base=car.height||0,pitch=car.roadPitch||0,active=mode==='on'||mode==='auto'&&daylight<.8;return{clockMinutes:clock,daylight,ambient,sky,active,mode,phase:raw>.9?'DAY':raw<.1?'NIGHT':clock<720?'DAWN':'DUSK',lamp:[(car.x||0)+Math.cos(a)*front,base+Math.sin(pitch)*front+9,(car.y||0)+Math.sin(a)*front],direction:[Math.cos(a),Math.sin(a)],key:String(daylight)};}
+function intensity(lit,x,y,z){if(!lit.active||lit.ambient>=.999)return lit.ambient;const dx=x-lit.lamp[0],dz=z-lit.lamp[2],forward=dx*lit.direction[0]+dz*lit.direction[1],r2=dx*dx+dz*dz;if(forward<=0||r2>=1000000)return lit.ambient;const r=Math.sqrt(r2),cone=smooth(.88,.98,forward/Math.max(1,r)),vertical=1-smooth(.13,.33,Math.abs((y-lit.lamp[1])/Math.max(20,r)+.015)),beam=cone*vertical*(1-smooth(100,1000,r));return lit.ambient+(1-lit.ambient)*beam;}
+function css(rgb){return 'rgb('+rgb.map(v=>Math.round(v*255)).join(',')+')';}
+return{state,intensity,css};});

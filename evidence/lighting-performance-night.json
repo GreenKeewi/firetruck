@@ -1,0 +1,61 @@
+{
+  "measuredAt": "2026-10-16T19:07:13.370Z",
+  "sourceBase": "920db4956c4751a301a2c8e808e771cce65851c4",
+  "environment": "Cloud Chromium Canvas fallback, 1024x768, keyboard-selected Gridlock, low power, 9-second warm-up after driving/braking; no CPU throttling; no physical-device claim",
+  "protocol": "performance-check.cjs",
+  "runtimeHashes": {
+    "engine3d.js": "0b7ead410291af6776d69ce73d82be4149685b5f4cd24914eb2a44de24b481ea",
+    "traffic-control.js": "4197e702631e616ac5ef217ba9d5184bb3f118c9ed9395ea5de635c402823354",
+    "game.js": "ab21ec5489b77f124777ec608ede7f346b830cf196bfaf327894ccddcba628b3",
+    "renderer.js": "e7d93dd051eb76788cb90dec6c5b20b31978aa9c99c9fc9047cf8615c7004d36",
+    "software.js": "1544d0e300d03602dd54b3ec10e324792ec4f0d812412147bfecf5036d866670",
+    "lighting.js": "3b58f085a2529267e7595665f324b8bb020a2a30f6307b1e955f703fd8dfda62"
+  },
+  "software": true,
+  "lowPower": true,
+  "engineLowPower": true,
+  "cars": 144,
+  "fps": 25,
+  "lighting": {
+    "clockMinutes": 1325.1333333333332,
+    "daylight": 0,
+    "ambient": 0.42,
+    "sky": [
+      0.085,
+      0.13,
+      0.205
+    ],
+    "active": true,
+    "mode": "auto",
+    "phase": "NIGHT",
+    "lamp": [
+      907.2725774487672,
+      9,
+      1185
+    ],
+    "direction": [
+      1,
+      0
+    ],
+    "key": "0"
+  },
+  "fullCallback": {
+    "samples": 240,
+    "meanMs": 23.59916666666589,
+    "p95Ms": 34.700000000186265,
+    "maxMs": 40.200000000186265
+  },
+  "renderOnly": {
+    "samples": 240,
+    "meanMs": 20.700416666688398,
+    "p95Ms": 29.59999999962747,
+    "maxMs": 37
+  },
+  "drawGap": {
+    "samples": 240,
+    "meanMs": 37.425,
+    "p95Ms": 51.700000000186265,
+    "maxMs": 63.5
+  },
+  "errors": []
+}
