@@ -1,0 +1,30 @@
+[
+  {
+    "vehicle": "taxi",
+    "end": "west",
+    "passed": true,
+    "seconds": 27.1,
+    "collisions": 0
+  },
+  {
+    "vehicle": "taxi",
+    "end": "east",
+    "passed": true,
+    "seconds": 27.3,
+    "collisions": 0
+  },
+  {
+    "vehicle": "bus",
+    "end": "west",
+    "passed": true,
+    "seconds": 30.233333333333334,
+    "collisions": 0
+  },
+  {
+    "vehicle": "bus",
+    "end": "east",
+    "passed": true,
+    "seconds": 30.55,
+    "collisions": 0
+  }
+]

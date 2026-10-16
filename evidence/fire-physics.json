@@ -1,0 +1,17 @@
+{
+  "recovery": {
+    "firstMetres": 4.728252510021389,
+    "repeatedMetres": 4.894144774213453,
+    "timerPreserved": true
+  },
+  "blockedRecovery": "refused occupied history",
+  "impact": {
+    "reboundKmh": -2.914300781953872,
+    "collisions": 1
+  },
+  "speedCap": {
+    "maximumKmh": 160,
+    "steps": 6000
+  },
+  "layers": "ramp/highway history restores exact supported layer and heading"
+}

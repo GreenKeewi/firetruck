@@ -1,0 +1,78 @@
+{
+  "routes": [
+    {
+      "from": "Toronto",
+      "to": "Pickering",
+      "routeKm": 2.35,
+      "highwayKm": 1.19,
+      "estimatedMinutes": 3.8,
+      "exit": 2
+    },
+    {
+      "from": "Toronto",
+      "to": "Oshawa",
+      "routeKm": 3.67,
+      "highwayKm": 2.51,
+      "estimatedMinutes": 4.6,
+      "exit": 3
+    },
+    {
+      "from": "Pickering",
+      "to": "Toronto",
+      "routeKm": 2.26,
+      "highwayKm": 1.17,
+      "estimatedMinutes": 3.6,
+      "exit": 1
+    },
+    {
+      "from": "Pickering",
+      "to": "Oshawa",
+      "routeKm": 2.43,
+      "highwayKm": 1.24,
+      "estimatedMinutes": 4,
+      "exit": 3
+    },
+    {
+      "from": "Oshawa",
+      "to": "Toronto",
+      "routeKm": 3.58,
+      "highwayKm": 2.49,
+      "estimatedMinutes": 4.5,
+      "exit": 1
+    },
+    {
+      "from": "Oshawa",
+      "to": "Pickering",
+      "routeKm": 2.23,
+      "highwayKm": 1.22,
+      "estimatedMinutes": 3.3,
+      "exit": 2
+    }
+  ],
+  "missedExitRecovery": {
+    "length": 36942.9226510444,
+    "highwayLength": 25063.52377206775,
+    "rampLength": 8059.4354145663265,
+    "estimatedSeconds": 278.07851682426997,
+    "nextExit": {
+      "city": "Oshawa",
+      "number": 3,
+      "rampIndex": 11,
+      "distance": 12832.188252381704
+    }
+  },
+  "highwaySectors": [
+    {
+      "name": "Port Union Freight Corridor",
+      "kind": "freight",
+      "start": 3427,
+      "end": 13550
+    },
+    {
+      "name": "Lynde Creek Reserve",
+      "kind": "wetland",
+      "start": 16190,
+      "end": 26750
+    }
+  ]
+}
