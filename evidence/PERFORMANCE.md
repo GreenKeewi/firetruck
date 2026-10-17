@@ -11,3 +11,7 @@ The canonical protocol is now performance-check.cjs: fresh Chromium Canvas conte
 | Lighting — night | 25 | 144 | 34.7 | 51.7 | [lighting-performance-night.json](lighting-performance-night.json) |
 
 All three new runs report no page errors and retain 144 vehicles. The lighting runs are not a performance gain claim. The last-window FPS, complete callback cost and draw gaps describe different samples/windows; callback samples include throttled callbacks that do not draw, while render-only samples omit simulation. Draw-gap p95 exposes visible stutter. These cloud measurements vary and do not predict a physical weak computer or a CPU-throttled benchmark. No traffic reduction was used to improve the reported numbers.
+
+## Fire monitor checkpoint
+
+[fire-performance-night.json](fire-performance-night.json) records the cannon release at night with all 144 vehicles retained: 30 FPS, full-callback p95 15.5 ms and draw-gap p95 35.7 ms, with zero page errors. The fixture places the truck at a warehouse bay, performs the keyboard parking hold and F entry, then holds Space on a miss while both fires remain active. The camera is stationary and faces the street; the fires are outside this view. This is a different scene from the driving captures above and is not evidence of a speed improvement. Runtime hashes include fire-response.js and identify the exact tested source. [Screenshot](fire-gridlock-night.png).

@@ -1,0 +1,17 @@
+{
+  "warehouse": {
+    "twoFiresExtinguished": true,
+    "missesPreserveHeat": true,
+    "arrivalTimeFrozen": true,
+    "downtime": 18.991666666666667
+  },
+  "vehicle": {
+    "blockedJetCannotHit": true,
+    "staleAimCannotHit": true,
+    "singleFireExtinguished": true,
+    "wrongRoadLayerRejected": true
+  },
+  "sites": {
+    "validatedFireProps": 186
+  }
+}

@@ -9,7 +9,7 @@
     "maxX": 48,
     "minZ": -13.5,
     "maxZ": 13.5,
-    "maxHeight": 37
+    "maxHeight": 39.648408150164634
   },
   "errors": [],
   "source": "actual emitted mesh inspected against physical rectangular hull"

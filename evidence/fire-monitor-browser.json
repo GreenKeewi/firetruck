@@ -1,0 +1,24 @@
+[
+  {
+    "backend": "canvas",
+    "keyboardApproachAndParking": true,
+    "keyboardAimingAndTwoFireExtinguishing": true,
+    "missAndDriveModePreserveHeat": true,
+    "pauseFreezesFire": true,
+    "recoveryPreservesProgress": true,
+    "nextCallAccepted": true,
+    "arrivalAllowance": 119.31210740298216,
+    "errors": []
+  },
+  {
+    "backend": "webgl",
+    "keyboardApproachAndParking": true,
+    "keyboardAimingAndTwoFireExtinguishing": true,
+    "missAndDriveModePreserveHeat": true,
+    "pauseFreezesFire": true,
+    "recoveryPreservesProgress": "covered on Canvas",
+    "nextCallAccepted": true,
+    "arrivalAllowance": 119.88390227477717,
+    "errors": []
+  }
+]

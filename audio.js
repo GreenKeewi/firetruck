@@ -64,7 +64,7 @@ class TaxiAudio {
   this.engine.gain.setTargetAtTime((.13+load*.095+velocity*.033)*shift,t,.065);
   const lateral=Math.abs(Number(c.lateralAccelerationMps2)||0),slip=clamp(Number(c.tireSlip)||0,0,1);
   if(this.wind){
-   this.wind.gain.gain.setTargetAtTime(Math.pow(clamp(v/120,0,1.3),2)*.068,t,.2);
+   this.wind.gain.gain.setTargetAtTime(Math.pow(clamp(v/120,0,1.3),2)*.068+(options.spray?.045:0),t,.2);
    this.wind.filter.frequency.setTargetAtTime(420+velocity*1050,t,.22);
    this.road.gain.gain.setTargetAtTime(clamp(v/65,0,1)*.042,t,.13);
    this.road.filter.frequency.setTargetAtTime(130+velocity*230,t,.13);

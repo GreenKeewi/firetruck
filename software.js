@@ -75,7 +75,7 @@
 
     _color(r, g, b) {
       const rr = Math.round(r * 255), gg = Math.round(g * 255), bb = Math.round(b * 255);
-      const key = (rr << 16) | (gg << 8) | bb;
+      const key = rr>255||gg>255||bb>255?'e:'+rr+':'+gg+':'+bb:(rr << 16) | (gg << 8) | bb;
       let id = this._colors.get(key);
       if (id !== undefined) return id;
       id = this._palette.length; this._colors.set(key, id);

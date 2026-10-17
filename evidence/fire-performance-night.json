@@ -1,0 +1,72 @@
+{
+  "measuredAt": "2026-10-16T19:37:57.094Z",
+  "sourceBase": "af5f1531536a9448fe343afb8586bd5e6e18f336",
+  "environment": "Cloud Chromium Canvas fallback, 1024x768, keyboard-selected Gridlock, low power, 9-second warm-up after driving/braking; no CPU throttling; no physical-device claim",
+  "protocol": "performance-check.cjs",
+  "fireFixture": "Warehouse bay placement; actual parking hold, F monitor, Space held on a miss; both fires and all traffic remain",
+  "runtimeHashes": {
+    "engine3d.js": "e336ada498b0e7bae9a41b04dee6f240b3e9b360954b285deae47b5a88cb656c",
+    "traffic-control.js": "4197e702631e616ac5ef217ba9d5184bb3f118c9ed9395ea5de635c402823354",
+    "game.js": "19e09842a27afe920caf9a74e9cebd1d5a88c7746daea455cefa3a35fbbaae51",
+    "renderer.js": "e7d93dd051eb76788cb90dec6c5b20b31978aa9c99c9fc9047cf8615c7004d36",
+    "software.js": "1a718530e25211924b0275419ff014ad31c5171c065952439731d8bf186222ff",
+    "lighting.js": "3b58f085a2529267e7595665f324b8bb020a2a30f6307b1e955f703fd8dfda62",
+    "fire-response.js": "340aa10aabb048bf10afb8b8ac8b9ba874a63cc269d3b21f2a131138321a270f"
+  },
+  "software": true,
+  "lowPower": true,
+  "engineLowPower": true,
+  "cars": 144,
+  "fps": 30,
+  "fireScene": {
+    "stage": "fire",
+    "monitor": true,
+    "spraying": true,
+    "fires": [
+      1,
+      1
+    ]
+  },
+  "lighting": {
+    "clockMinutes": 1325.88,
+    "daylight": 0,
+    "ambient": 0.42,
+    "sky": [
+      0.085,
+      0.13,
+      0.205
+    ],
+    "active": true,
+    "mode": "auto",
+    "phase": "NIGHT",
+    "lamp": [
+      1978.5,
+      9,
+      706
+    ],
+    "direction": [
+      1,
+      0
+    ],
+    "key": "0"
+  },
+  "fullCallback": {
+    "samples": 240,
+    "meanMs": 7.5900000000178505,
+    "p95Ms": 15.5,
+    "maxMs": 22.799999999813735
+  },
+  "renderOnly": {
+    "samples": 240,
+    "meanMs": 12.133750000002328,
+    "p95Ms": 14.699999999254942,
+    "maxMs": 19.700000000186265
+  },
+  "drawGap": {
+    "samples": 240,
+    "meanMs": 33.47833333333256,
+    "p95Ms": 35.700000000186265,
+    "maxMs": 52.19999999925494
+  },
+  "errors": []
+}
